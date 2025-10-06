@@ -1,0 +1,49 @@
+{
+  "manifest_version": 3,
+  "name": "ارسال نسخه به نرم‌افزار آریا",
+  "description":  "استخراج نسخه از سایت نیروهای مسلح و ثبت در نرم‌افزار آریا با مدال تعاملی و انتخاب کالاها",
+   "icons": {
+          "16": "assets/icon/icon.png",
+          "48": "assets/icon/icon.png",
+          "128": "assets/icon/icon.png"
+      },
+  "version": "3.0.1",
+  "permissions": [
+    "scripting",
+    "storage"
+  ],
+  "host_permissions": [
+    "https://pharmacy.local:443/*"    
+  ]
+  ,
+  
+  "action": {
+    "default_title": "افزونه نیرو های مسلح آریا",
+        "default_icon": {
+          "16": "assets/icon/icon16.png",
+          "24": "assets/icon/icon24.png",
+          "32": "assets/icon/icon32.png"
+        }
+  },
+  "background": {
+    "service_worker": "background/background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://esakhad.esata.ir:9094/*"],
+      "css": ["style.css"],
+      "js": ["dist/bundle.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "assets/css/bootstrap.min.css",
+        "assets/js/bootstrap.bundle.min.js",
+        "assets/config.txt"
+      ],
+      "matches": ["https://esakhad.esata.ir:9094/*"]
+    }
+  ]
+}

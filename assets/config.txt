@@ -1,0 +1,6 @@
+[Form]
+username=sa
+pass=1
+Server=.\sql2019
+DataBase=emamreza
+API_URL=https://pharmacy.local:443/

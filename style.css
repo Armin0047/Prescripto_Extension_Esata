@@ -1,0 +1,104 @@
+#floating-button {
+  position: fixed;
+  top: 80px;
+  right: 20px;
+  z-index: 9999;
+  background-color: #007BFF;
+  color: white;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+input,
+input::placeholder {
+    font-size: 14px;
+}
+
+option {
+    font-size: 14px;
+}
+
+.widthCell{
+  width: 50px;
+}
+
+.Colorwithe
+{
+  color: white;
+}
+
+.widthbtn
+{
+  width: 50px;
+  font-size: 10px !important;
+  color: black !important; 
+   text-align: center !important;
+   padding: 0;
+}
+
+.dirrtl
+{
+  direction: rtl !important;
+}
+
+
+@media (max-width: 768px) {
+  p {
+    font-size: 10px;
+  }
+}
+
+.modal-body{
+  max-height: 60vh;
+  overflow-y: auto;
+  position: relative;
+  padding-bottom: 80px;
+}
+
+.table-responsive{
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.fixed-pagination{
+  position: sticky;
+  bottom: 0;
+  background-color: white;
+  padding: 10px;
+  z-index: 3;
+}
+
+.col-code .col-btn .col-price .col-gencode .col-mojodi .code-mojodianb{
+  width: 5% !important;
+}
+
+.col-faname .cod-enname{
+  width: 35%;
+}
+
+
+@media screen and (min-width: 1096) {
+  /* CSS rules for screens with a minimum width of 768px */
+  button {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 1078px) {
+  /* CSS rules for screens with a maximum width of 600px */
+  button {
+    font-size: 10px; 
+  }  
+}
+
+.scroll-container {
+  overflow-x: auto;
+  direction: rtl; /* مهم */
+}
+.scroll-container table {
+  direction: ltr; /* تا متن جدول چپ‌به‌راست بمونه */
+}
